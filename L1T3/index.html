@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="phone.css" media="(max-width:400px)">
+    <title>Calculator</title>
+</head>
+<body>
+    <!-- <div class="container" id="full" onclick="start()"> -->
+    <div class="container" id="full">
+        <h1 id="heading">Calculator</h1>
+        <div class="calc">
+            <div class="display" id="value">
+                <!-- <input class="display" type="text" name="" id="value"> -->
+            </div>
+            <div class="buttons">
+                <div class="row">
+                    <button class="button clear">AC</button>
+                    <!-- <button onclick="del()" class="button"><i class="fa-solid fa-delete-left" style="color: #000000;"></i></button> -->
+                    <!-- <button onclick="del()" class="button">C</button> -->
+                    <button class="button">C</button>
+                    <button class="button operator">%</button>
+                    <button class="button operator">/</button>
+                    <!-- <button onclick="divide()"><i class="fa-solid fa-divide" style="color: #000000;"></i></button> -->
+                </div>
+                <div class="row">
+                    <button class="button">7</button>
+                    <button class="button">8</button>
+                    <button class="button">9</button>
+                    <button class="button operator">X</button>
+                </div>
+                <div class="row">
+                    <button class="button">4</button>
+                    <button class="button">5</button>
+                    <button class="button">6</button>
+                    <button class="button operator">-</button>
+                </div>
+                <div class="row">
+                    <button class="button">1</button>
+                    <button class="button">2</button>
+                    <button class="button">3</button>
+                    <button class="button operator">+</button>
+                </div>
+                <div class="row">
+                    <button onclick="change()" class="button">+/-</button>
+                    <button class="button">0</button>
+                    <button class="button">.</button>
+                    <button class="button equal">=</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="infinity"><i class="fa-solid fa-infinity" style="color: #000000;"></i></div>
+    <script src="index.js"></script>
+</body>
+</html>
